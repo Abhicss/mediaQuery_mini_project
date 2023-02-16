@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+/* navbar */
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul{
+    display: flex;
+    /* height: 100vh; */
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+nav ul:hover{
+    cursor: pointer;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+}
+.hand{
+    height: 20px;
+    width: 20px;
+}
+.left-section{
+display: flex;
+margin-left: 20px;
+flex-direction: column;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+h3{
+    text-align: center;
+    margin-top: 20px;
+}
+.first-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.second-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.project{
+    text-align: center;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.footer img{
+    height: 30px;
+    margin: 10px 20px 0px 10px;
+    width: 30px;
+}
+.hamburger img{
+    height: 30px;
+    width: 30px;
+    display: none;
+}
+@media screen and (max-width:700px) {
+    nav{
+        display: none;
+    }
+    .hamburger img{
+        display: block;
+
+    }
+    .hamburger img:hover{
+        cursor: pointer;
+    }
+    
+    /* main section */
+    main{
+        display: block;
+    }
+    .left-section{
+        display: flex;
+        align-items: center;
+    }
+    .left-section img{
+       
+        height: 50px;
+        width: 50px;
+    }
+    .logo{
+        display: block;
+    }
+    .right-section{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .first-section{
+        display: block;
+    }
+    .second-section{
+        display: block;
+    }
+    footer{
+        margin-top:20px;
+    }
+}
